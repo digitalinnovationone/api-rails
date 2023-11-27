@@ -3,9 +3,13 @@ class AdministradoresController < ApplicationController
   skip_before_action :autenticacao, only: [:login]
 
   def login
-    @administrador = Administrador.where(email: params[:email], senha: params[:senha]).first
-    return render json: { erro: "Login ou senha inválido" }, status: 400 if @administrador.blank?
+    @administrador = Administrador.where(email: params[:email]).first
+    if params[:senha].blank? || @administrador.senha != BCrypt::Engine.hash_secret(params[:senha], @administrador.salt)
+      return render json: { erro: "Login ou senha inválido" }, status: 400 if @administrador.blank?
+    end
 
+    @administrador.atualizar_senha!(params[:senha])
+    
     payload = {
       data: {
         id: @administrador.id,

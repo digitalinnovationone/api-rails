@@ -1,6 +1,17 @@
 class ClientesController < ApplicationController
     def index
-        @clientes = Cliente.all
+        per_page = 5
+        page = params[:page] || 1
+        page = params[:page].to_i < 1 ? 1 : params[:page].to_i
+
+        # offset = ((page - 1) * per_page)
+
+        # @clientes = Cliente.all
+
+        # @clientes = @clientes.limit(per_page)
+        # @clientes = @clientes.offset(offset)
+
+        @clientes = Cliente.paginate(page: page, per_page: per_page)
     end
 
     def show

@@ -1,0 +1,1 @@
+curl -X GET 'http://127.0.0.1:3000/clientes' -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImlkIjoxLCJub21lIjoiRGFuaWxvIiwiZW1haWwiOiJkYW5pbG9AdGVzdGUuY29tIiwicGVyZmlsIjoiQURNIn0sImV4cCI6MTcwMTA5Njk1NH0.4oZpK5NiW-T7PWEbQ5Yk_7liDVj3HoHt2Kb8TeyVOSc"
