@@ -37,6 +37,7 @@ gem "bootsnap", require: false
 
 gem 'httpparty'
 gem 'rest-client'
+gem 'rack-cors'
 
 gem 'will_paginate'
 
