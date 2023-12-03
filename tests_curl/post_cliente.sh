@@ -1,0 +1,1 @@
+curl -X POST 'http://127.0.0.1:3000/clientes' -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImlkIjoxLCJub21lIjoiRGFuaWxvIiwiZW1haWwiOiJkYW5pbG9AdGVzdGUuY29tIiwicGVyZmlsIjoiQURNIn0sImV4cCI6MTcwMTYwNTM3Nn0.a1Or5j-GQk29eTg4Lu8wGkWieozk1Q8TMzSbOsDov_s" -d '{"nome": "CPF inválido", "telefone": "123432356227", "cpf": "623.520.360-09"}'
