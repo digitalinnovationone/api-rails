@@ -7,7 +7,7 @@ class Cliente < ApplicationRecord
     private
 
     def cpf_validar
-        unless CpfUtils::cpf_valido?(self.cpf)
+        unless CpfUtilsDio::cpf_valido?(self.cpf)
             errors.add(:cpf, "inválido")
         end
     end
