@@ -11,7 +11,7 @@ gem "sqlite3", "~> 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 
-gem 'cpf_utils_dio', git: 'https://github.com/digitalinnovationone/cpf_utils_dio.git'
+gem 'cpf_utils_dio' #, git: 'https://github.com/digitalinnovationone/cpf_utils_dio.git'
 
 gem "jwt"
 gem "bcrypt"

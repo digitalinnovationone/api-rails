@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/digitalinnovationone/cpf_utils.git
-  revision: 871b1fb7335bb605dc74f6fbd3cab7da94b68a75
-  specs:
-    cpf_utils (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -90,6 +84,7 @@ GEM
     byebug (11.1.3)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
+    cpf_utils_dio (0.1.0)
     crass (1.0.6)
     date (3.3.4)
     debug (1.8.0)
@@ -230,7 +225,7 @@ DEPENDENCIES
   bcrypt
   bootsnap
   byebug
-  cpf_utils!
+  cpf_utils_dio
   debug
   faker
   httpparty
